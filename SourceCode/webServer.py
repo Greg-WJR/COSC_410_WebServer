@@ -23,7 +23,7 @@ while True:
         filename = message.split()[1]  
         
         # Open the requested file
-        f = open(filename[1:], "r")  # Strip the leading '/' from the filename
+        f = open(filename[1:], "r", encoding="utf-8")  # Strip the leading '/' from the filename
         
         # Read the content of the file
         outputdata = f.read()  
